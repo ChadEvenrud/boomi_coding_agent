@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bns:Component xmlns:bns="http://api.platform.boomi.com/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               componentId=""
+               folderId="REPLACE_WITH_FOLDER_ID"
+               name="Employee Data to XML"
+               type="process">
+  <bns:encryptedValues/>
+  <bns:description>Maps employee JSON records to an XML Employees document.</bns:description>
+  <bns:object>
+    <process allowSimultaneous="false" enableUserLog="false" processLogOnErrorOnly="false" purgeDataImmediately="false" updateRunDates="true" workload="general">
+      <shapes>
+        <shape image="start" name="shape1" shapetype="start" userlabel="" x="48.0" y="48.0">
+          <configuration>
+            <noaction/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape1.dragpoint1" toShape="shape2" x="224.0" y="58.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="message_icon" name="shape2" shapetype="message" userlabel="Sample employee JSON input" x="240.0" y="48.0">
+          <configuration>
+            <message combined="false">
+              <msgTxt>'{"employees":[{"employeeId":"E001","firstName":"Jane","lastName":"Smith","email":"jane.smith@company.com","department":"Engineering","jobTitle":"Senior Developer","hireDate":"2020-03-15","salary":95000},{"employeeId":"E002","firstName":"John","lastName":"Doe","email":"john.doe@company.com","department":"Sales","jobTitle":"Account Executive","hireDate":"2019-07-01","salary":72000}]}'</msgTxt>
+              <msgParameters/>
+            </message>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape2.dragpoint1" toShape="shape3" x="416.0" y="58.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="map_icon" name="shape3" shapetype="map" userlabel="Transform JSON to XML" x="432.0" y="48.0">
+          <configuration>
+            <map mapId="REPLACE_WITH_MAP_ID"/>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape3.dragpoint1" toShape="shape4" x="608.0" y="58.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="notify_icon" name="shape4" shapetype="notify" userlabel="Log transformed XML" x="624.0" y="48.0">
+          <configuration>
+            <notify disableEvent="true" enableUserLog="false" perExecution="false" title="">
+              <notifyMessage>Transformed employee XML output:
+{1}</notifyMessage>
+              <notifyMessageLevel>INFO</notifyMessageLevel>
+              <notifyParameters>
+                <parametervalue key="1" valueType="current"/>
+              </notifyParameters>
+            </notify>
+          </configuration>
+          <dragpoints>
+            <dragpoint name="shape4.dragpoint1" toShape="shape5" x="800.0" y="58.0"/>
+          </dragpoints>
+        </shape>
+        <shape image="stop_icon" name="shape5" shapetype="stop" userlabel="" x="816.0" y="48.0">
+          <configuration>
+            <stop continue="true"/>
+          </configuration>
+          <dragpoints/>
+        </shape>
+      </shapes>
+    </process>
+  </bns:object>
+  <bns:processOverrides/>
+</bns:Component>

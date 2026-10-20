@@ -1,0 +1,43 @@
+{
+  "folder_id": "Rjo4NDM4MzIz",
+  "process_count": 3,
+  "total_pulled": 9,
+  "components": [
+    {
+      "id": "3654d5cb-e25d-41d2-a447-d2ce06174419",
+      "path": "process_template/connector-action/GET STMCC Pack Info Data.xml"
+    },
+    {
+      "id": "2c2662a4-c95e-41aa-8f00-381648c07f86",
+      "path": "process_template/connector-settings/MySQL STMCC.xml"
+    },
+    {
+      "id": "df64e027-5fc4-4c68-8f81-b821fc446809",
+      "path": "process_template/process/Consumer_Target_System_BusinessObject.xml"
+    },
+    {
+      "id": "3f82bd52-5988-4eb7-8a57-a4034d0d3802",
+      "path": "process_template/process/Producer_Source_System_BusinessObject.xml"
+    },
+    {
+      "id": "7bcccdc6-6bf2-48ae-9db3-a5b306e71b4c",
+      "path": "process_template/process/Router_BusinessObject.xml"
+    },
+    {
+      "id": "f9aef53f-63f2-487a-8bef-1b1ef30c27b0",
+      "path": "process_template/processproperty/Common Props.xml"
+    },
+    {
+      "id": "01b4c2a9-c74f-4bef-a6d4-17571f6d9ebc",
+      "path": "process_template/profile.flatfile/[UTIL] Temp FF.xml"
+    },
+    {
+      "id": "5674bbbb-3ff0-470f-a1cb-71d59d02db10",
+      "path": "process_template/profile.xml/Generic Notification & Audit XML Prof.xml"
+    },
+    {
+      "id": "26d00fe1-a96c-407f-ad56-ce7f95102ded",
+      "path": "process_template/transform.map/Temp FF To Generic Notification & Audit XML [Insert audit E].xml"
+    }
+  ]
+}

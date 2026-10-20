@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bns:Component xmlns:bns="http://api.platform.boomi.com/"
+               componentId=""
+               folderId="REPLACE_WITH_FOLDER_ID"
+               name="Employee JSON to XML Map"
+               type="transform.map">
+  <bns:object>
+    <Map fromProfile="REPLACE_WITH_JSON_PROFILE_ID" toProfile="REPLACE_WITH_XML_PROFILE_ID">
+      <Mappings>
+        <Mapping fromKey="7" fromType="profile" toKey="3" toType="profile"/>
+        <Mapping fromKey="8" fromType="profile" toKey="4" toType="profile"/>
+        <Mapping fromKey="9" fromType="profile" toKey="5" toType="profile"/>
+        <Mapping fromKey="10" fromType="profile" toKey="6" toType="profile"/>
+        <Mapping fromKey="11" fromType="profile" toKey="7" toType="profile"/>
+        <Mapping fromKey="12" fromType="profile" toKey="8" toType="profile"/>
+        <Mapping fromKey="13" fromType="profile" toKey="9" toType="profile"/>
+        <Mapping fromKey="14" fromType="profile" toKey="10" toType="profile"/>
+      </Mappings>
+      <Functions optimizeExecutionOrder="true"/>
+      <Defaults/>
+      <DocumentCacheJoins/>
+    </Map>
+  </bns:object>
+</bns:Component>

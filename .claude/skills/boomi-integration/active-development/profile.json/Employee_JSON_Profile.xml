@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bns:Component xmlns:bns="http://api.platform.boomi.com/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               componentId=""
+               name="Employee JSON Profile"
+               type="profile.json"
+               folderId="REPLACE_WITH_FOLDER_ID">
+  <bns:encryptedValues/>
+  <bns:object>
+    <JSONProfile strict="false">
+      <DataElements>
+        <JSONRootValue dataType="character" isMappable="true" isNode="true" key="1" name="Root">
+          <DataFormat><ProfileCharacterFormat/></DataFormat>
+          <JSONObject isMappable="false" isNode="true" key="2" name="Object">
+            <JSONObjectEntry dataType="character" isMappable="false" isNode="true" key="3" name="employees">
+              <DataFormat><ProfileCharacterFormat/></DataFormat>
+              <JSONArray elementType="repeating" isMappable="false" isNode="true" key="4" name="employees">
+                <JSONArrayElement dataType="character" isMappable="false" isNode="true" key="5"
+                                  maxOccurs="-1" minOccurs="0" name="ArrayElement1">
+                  <JSONObject isMappable="false" isNode="true" key="6" name="Object">
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="7" name="employeeId">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="8" name="firstName">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="9" name="lastName">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="10" name="email">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="11" name="department">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="12" name="jobTitle">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="character" isMappable="true" isNode="true" key="13" name="hireDate">
+                      <DataFormat><ProfileCharacterFormat/></DataFormat>
+                    </JSONObjectEntry>
+                    <JSONObjectEntry dataType="number" isMappable="true" isNode="true" key="14" name="salary">
+                      <DataFormat><ProfileNumberFormat numberFormat=""/></DataFormat>
+                    </JSONObjectEntry>
+                  </JSONObject>
+                </JSONArrayElement>
+              </JSONArray>
+            </JSONObjectEntry>
+          </JSONObject>
+          <Qualifiers><QualifierList/></Qualifiers>
+        </JSONRootValue>
+      </DataElements>
+      <tagLists/>
+    </JSONProfile>
+  </bns:object>
+</bns:Component>

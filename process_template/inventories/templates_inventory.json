@@ -1,0 +1,53 @@
+[
+  {
+    "@type": "ComponentMetadata",
+    "componentId": "3f82bd52-5988-4eb7-8a57-a4034d0d3802",
+    "version": 14,
+    "name": "Producer_<Source_System>_<BusinessObject>",
+    "type": "process",
+    "createdDate": "2026-04-10T03:35:20Z",
+    "createdBy": "Chad.Evenrud@swinerton.com",
+    "modifiedDate": "2026-05-20T04:27:23Z",
+    "modifiedBy": "Chad.Evenrud@swinerton.com",
+    "deleted": false,
+    "currentVersion": true,
+    "folderName": "Templates",
+    "folderId": "Rjo4NDM4MzIz",
+    "branchName": "main",
+    "branchId": "Qjo0ODgwNA"
+  },
+  {
+    "@type": "ComponentMetadata",
+    "componentId": "7bcccdc6-6bf2-48ae-9db3-a5b306e71b4c",
+    "version": 3,
+    "name": "Router_<BusinessObject>",
+    "type": "process",
+    "createdDate": "2026-04-16T04:03:49Z",
+    "createdBy": "Chad.Evenrud@swinerton.com",
+    "modifiedDate": "2026-04-16T04:32:11Z",
+    "modifiedBy": "Chad.Evenrud@swinerton.com",
+    "deleted": false,
+    "currentVersion": true,
+    "folderName": "Templates",
+    "folderId": "Rjo4NDM4MzIz",
+    "branchName": "main",
+    "branchId": "Qjo0ODgwNA"
+  },
+  {
+    "@type": "ComponentMetadata",
+    "componentId": "df64e027-5fc4-4c68-8f81-b821fc446809",
+    "version": 5,
+    "name": "Consumer_<Target_System>_<BusinessObject>",
+    "type": "process",
+    "createdDate": "2026-04-16T03:51:04Z",
+    "createdBy": "Chad.Evenrud@swinerton.com",
+    "modifiedDate": "2026-04-16T03:56:17Z",
+    "modifiedBy": "Chad.Evenrud@swinerton.com",
+    "deleted": false,
+    "currentVersion": true,
+    "folderName": "Templates",
+    "folderId": "Rjo4NDM4MzIz",
+    "branchName": "main",
+    "branchId": "Qjo0ODgwNA"
+  }
+]
